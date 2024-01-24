@@ -1,4 +1,4 @@
-# CSCI 120 - Computer Science Class Repository
+# CSCI 120: Introduction to Computer Science and Programming I
 
 Welcome to the CSCI 120 repository! This repository serves as a recordkeeping space for all the code, lab exercises, and assignments completed during the Computer Science class.
 
@@ -10,7 +10,8 @@ Welcome to the CSCI 120 repository! This repository serves as a recordkeeping sp
 - [Contributing](#contributing)
 - [License](#license)
 
-## About Course - CSCI 120: Introduction to Computer Science and Programming I
+## About Course
+
 This course is an introduction to computing science and program design, suitable for students with little or no programming background. Students will learn fundamental concepts and terminology of computing science, acquire introductory skills for programming in a high-level language, and be introduced to the diverse fields and applications of computing science.
 
 ## Description
