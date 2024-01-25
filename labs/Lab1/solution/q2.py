@@ -1,3 +1,5 @@
+#815805
+
 import sys
 
 def calculate_net_profit(buying_price, selling_price):
