@@ -40,4 +40,18 @@
 
 # print(prompt("What Cites are in Metro Vancouver? ", cities))
 
+# Version 4
+
+# cities = ["Vancouver", "Burnaby", "Coquitlam", "Richmond", "Surrey"]
+
+# def prompt(prompt, valid):
+#     response = "Incorrect"
+#     while (response == "Incorrect"):
+#         userInput = input(prompt)
+#         response = "Correct" if userInput in valid else "Incorrect"
+#     return response
+
+# print(prompt("What Cites are in Metro Vancouver? ", cities))
+
 # ----------------------------------------------------------------------------------------------------------
+
