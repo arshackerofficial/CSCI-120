@@ -11,7 +11,7 @@ calories = {
     "cantaloupe" : 50,
     "grapefruit" : 60,
     "grapes" : 90,
-    "honeydew" : 50,
+    "honeydew melon" : 50,
     "kiwifruit" : 90,
     "lemon" : 15,
     "lime" : 20,
@@ -27,8 +27,7 @@ calories = {
     "watermelon" : 80
 }
 
-user_input = input("Enter a fruit: ").lower()
-
+user_input = input("Enter a fruit: ").lower()  
 if user_input in calories:
     calorie_in_fruit = calories[user_input]
     print(f"Accoring to FDA's Poster, The calories in one portion of {user_input.capitalize()} are {calorie_in_fruit}.")
