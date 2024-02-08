@@ -101,3 +101,38 @@
 #             output += char
 #     prev_item = item
 # print(output)
+
+
+
+
+
+
+
+
+
+
+# Example 1:
+
+# Input: n = 12
+# Output: 3
+# Explanation: 12 = 4 + 4 + 4.
+# Example 2:
+
+# Input: n = 13
+# Output: 2
+# Explanation: 13 = 4 + 9.
+
+
+
+def num_perfect_squares(n): 
+    if n <= 0: return 0
+    perfect_squares = [i * i for i in range(1, int(n ** 0.5) + 1)]
+    # count = float('inf')
+    count = 0
+    for square in perfect_squares:
+        if square == n: return 1
+        elif square < n: count = num_perfect_squares()
+    return count
+
+
+print(num_perfect_squares(44))
