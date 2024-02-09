@@ -86,3 +86,24 @@
 #     return True
     
 # print(is_prime([2,3,7,5]))
+
+
+# def is_prime(n, prev=True):
+#     if not prev: return False
+    
+#     for num in n:
+#         if num <= 1:
+#                 return False
+#         for i in range(2, num):
+#             if num % i == 0:
+#                 return False
+#     return True
+
+
+
+# shift some no. of element to left
+
+# def rotate(list, val):
+#     return list[-val:] + list[:-val]
+
+# print(rotate([1,2,3,4,5], 1))
