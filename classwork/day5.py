@@ -12,8 +12,6 @@
 # print(sumlist([1,2,-8]))
 
 
-
-
 # count how many items have same first and last word
 
 # def matchWords(words):
@@ -26,15 +24,13 @@
 # print(matchWords(["abc", "xyz", "aba", "1221"]))
 
 
-
-
 # find words in string which are greater then a number
 
 # def longWords(n, string):
 #     words = string.split(" ")
 #     output = []
 
-    # output = [word for word in words if len(word) > n]
+# output = [word for word in words if len(word) > n]
 #     for word in words:
 #         if len(word) > n:
 #             output.append(word)
@@ -43,35 +39,31 @@
 # print(longWords(3, "the quick brown fox jumps over the lazy dog"))
 
 
-
-
 # find sums of 2 numbers in array given which adds up to target
 
 # def twoSum(nums, target):
 #     sums = {}
-    
+
 #     for i in range(len(nums)):
 #         num = nums[i]
 #         complement = target - num
 #         if complement in sums:
 #             return [sums[complement], i]
 #         sums[num] = i
-        
+
 # print(twoSum([1,2,3],3))
 
 # def twoSum(nums, target):
 #     sums = {}
-    
+
 #     for i in range(len(nums)):
 #         num = nums[i]
 #         complement = target - num
 #         if complement in nums:
 #             return [nums.index(complement), i].sort()
 #         # sums[num] = i
-        
+
 # print(twoSum([1,2,3],3))
-
-
 
 
 # Check if list contains prime numbers
@@ -84,13 +76,13 @@
 #             if num % i == 0:
 #                 return False
 #     return True
-    
+
 # print(is_prime([2,3,7,5]))
 
 
 # def is_prime(n, prev=True):
 #     if not prev: return False
-    
+
 #     for num in n:
 #         if num <= 1:
 #                 return False
@@ -100,10 +92,10 @@
 #     return True
 
 
-
 # shift some no. of element to left
 
 # def rotate(list, val):
 #     return list[-val:] + list[:-val]
 
-# print(rotate([1,2,3,4,5], 1))
+
+# print(rotate([1, 2, 3, 4, 5], 1))
