@@ -1,5 +1,6 @@
-#815805
+# 815805
 import sys
+
 
 def insertion_sort(arr, ascending=True):
     """
@@ -12,17 +13,18 @@ def insertion_sort(arr, ascending=True):
     Returns:
     - list: The sorted list.
     """
-    #WRITE YOUR CODE HERE
+    # WRITE YOUR CODE HERE
     for i in range(1, len(arr)):
         j = i-1
         current = arr[i]
-        while j>=0 and current < arr[j]:
+        while j >= 0 and current < arr[j]:
             arr[j+1] = arr[j]
-            j-=1
+            j -= 1
         arr[j+1] = current
 
-    if not ascending: arr = arr[::-1]
-    #DO NOT WRITE ANYTHING BELOW THIS
+    if not ascending:
+        arr = arr[::-1]
+    # DO NOT WRITE ANYTHING BELOW THIS
     return arr
 
 
@@ -43,7 +45,8 @@ def main():
 
     # Perform the insertion sort based on the command line argument
     ascending_order = True if order_arg == 'A' else False
-    sorted_list = insertion_sort(original_list.copy(), ascending=ascending_order)
+    sorted_list = insertion_sort(
+        original_list.copy(), ascending=ascending_order)
     order = "Ascending" if ascending_order else "Descending"
 
     # Display the sorted list
