@@ -373,14 +373,32 @@
 # print(insertionSort([2, 3, 5, 4, 1]))
 
 
-array = [2, 3, 5, 4, 1]
+# array = [2, 3, 5, 4, 1]
 
-for i in range(1, len(array)):
-    j = i-1
-    current = array[i]
-    while j >= 0 and current < array[j]:
-        array[j+1] = array[j]
-        j -= 1
-    array[j+1] = current
+# for i in range(1, len(array)):
+#     j = i-1
+#     current = array[i]
+#     while j >= 0 and current < array[j]:
+#         array[j+1] = array[j]
+#         j -= 1
+#     array[j+1] = current
 
-print(array)
+# print(array)
+
+# def sumList(arr):
+#     if len(arr) == 1:
+#         return arr[0]
+#     return (arr[0] + sumList(arr[1:]))
+
+
+# print(sumList([1, 2, 3, 4, 5]))
+
+word = "121211121211121211"
+flag = False
+n = len(word)
+for i in range(1, n // 2 + 1):
+    pattern = word[:i]
+    if all(word[j:j+i] == pattern for j in range(0, n, i)):
+        flag = True
+
+print(word, flag)
