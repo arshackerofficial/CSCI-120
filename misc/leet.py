@@ -439,23 +439,52 @@
 # ai != bi
 # 1 <= ai, bi <= n
 
+# if n <= len(trust):
+#     return -1
+# common = []
+# commonElement = -1
+# for i, element in enumerate(trust):
+#     first = element[0]
+#     second = element[1]
+#     if i+1 == first:
+#         if not common:
+#             common = [first, second]
+#         if first in common:
+#             commonElement = first
+#         if second in common:
+#             commonElement = second
+
+# return commonElement
+
 
 def findJudge(n, trust):
-    if n <= len(trust):
-        return -1
-    common = []
-    commonElement = -1
-    for i, element in enumerate(trust):
-        first = element[0]
-        second = element[1]
-        if i == first:
-            if not common:
-                common = [first, second]
-            if first in common:
-                commonElement = first
-            if second in common:
-                commonElement = second
-    return commonElement
+    dict = {}
+    for element in trust:
+        trusts = element[0]
+        trusted = element[1]
+        if trusted in dict:
+            dict.update({
+                trusted: dict[trusted] + [trusts]
+            })
+        else:
+            dict.update({
+                trusted: [trusts]
+            })
+    common = -1
+    for key in dict:
+        list = dict[key]
+        common = key
+        for i in range(1, n+1):
+            if (not i in list and not i == key) or key in list:
+                common = -1
+                break
+        else:
+            return common if common not in dict else -1
+    return common
+    # if len(dict) == 1:
+    #     return [x for x in dict][0]
+
+    # return -1
 
 
-print(findJudge(2, [[1, 2]]))
+print(findJudge(3, [[1, 3], [2, 3], [3, 1]]))
