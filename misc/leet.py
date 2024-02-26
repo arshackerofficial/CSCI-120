@@ -458,6 +458,8 @@
 
 
 def findJudge(n, trust):
+
+    # Make a dict of who is trusts whom
     dict = {}
     for element in trust:
         trusts = element[0]
@@ -470,21 +472,22 @@ def findJudge(n, trust):
             dict.update({
                 trusted: [trusts]
             })
-    common = -1
-    for key in dict:
-        list = dict[key]
-        common = key
-        for i in range(1, n+1):
-            if (not i in list and not i == key) or key in list:
-                common = -1
-                break
-        else:
-            return common if common not in dict else -1
-    return common
-    # if len(dict) == 1:
-    #     return [x for x in dict][0]
+    print(dict)
+    # Find who is Judge
+    judge = -1
+    if not dict and n == 1:
+        return 1
+    for key in dict:  # Everyone Trusts Judge
+        numbers = [x for x in range(1, n+1)]
+        numbers.remove(key)
+        if all([x in dict[key] for x in numbers]):
+            judge = key
 
-    # return -1
+    for key in dict:      # Everyone Trusts Judge
+        if judge in dict[key]:
+            judge = -1
+
+    return judge
 
 
-print(findJudge(3, [[1, 3], [2, 3], [3, 1]]))
+print(findJudge(1, []))
