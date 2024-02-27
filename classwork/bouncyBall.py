@@ -20,7 +20,7 @@ d = [
     ["", "", "", ""]
 ]
 x_vel = 1
-y_vel = -1
+y_vel = -2
 ball_x = 0
 ball_y = 0
 

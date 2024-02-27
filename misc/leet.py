@@ -335,159 +335,185 @@
 
 # for i in dict:
 #     if dict[i] == 1:
+# #         print(i)
+
+
+# # def seletionSort(array, ascending=True):
+# #     for i in range(len(array)):
+# #         min_index = i
+# #         for j in range(i+1, len(array)):
+# #             if (array[j] < array[min_index]):
+# #                 min_index = j
+
+# #         array[i], array[min_index] = array[min_index], array[i]
+
+# #     if not ascending:
+# #         array = array[::-1]
+# #     return array
+
+
+# # # print(seletionSort([2, 3, 5, 4, 1]))
+
+
+# # def insertionSort(array):
+# #     n = len(array)
+# #     if n <= 1:
+# #         return array
+
+# #     for i in range(1, n):
+# #         j = i-1
+# #         current = array[i]
+# #         while j >= 0 and current < array[j]:
+# #             array[j+1] = array[j]
+# #             j -= 1
+# #         array[j+1] = current
+# #     return array
+
+
+# # print(insertionSort([2, 3, 5, 4, 1]))
+
+
+# # array = [2, 3, 5, 4, 1]
+
+# # for i in range(1, len(array)):
+# #     j = i-1
+# #     current = array[i]
+# #     while j >= 0 and current < array[j]:
+# #         array[j+1] = array[j]
+# #         j -= 1
+# #     array[j+1] = current
+
+# # print(array)
+
+# # def sumList(arr):
+# #     if len(arr) == 1:
+# #         return arr[0]
+# #     return (arr[0] + sumList(arr[1:]))
+
+
+# # print(sumList([1, 2, 3, 4, 5]))
+
+# # word = "121211121211121211"
+# # flag = False
+# # n = len(word)
+# # for i in range(1, n // 2 + 1):
+# #     pattern = word[:i]
+# #     if all(word[j:j+i] == pattern for j in range(0, n, i)):
+# #         flag = True
+
+# # print(word, flag)
+
+
+# # n a town, there are n people labeled from 1 to n. There is a rumor that one of these people is secretly the town judge.
+
+# # If the town judge exists, then:
+
+# # The town judge trusts nobody.
+# # Everybody (except for the town judge) trusts the town judge.
+# # There is exactly one person that satisfies properties 1 and 2.
+# # You are given an array trust where trust[i] = [ai, bi] representing that the person labeled ai trusts the person labeled bi. If a trust relationship does not exist in trust array, then such a trust relationship does not exist.
+
+# # Return the label of the town judge if the town judge exists and can be identified, or return -1 otherwise.
+
+
+# # Example 1:
+
+# # Input: n = 2, trust = [[1,2]]
+# # Output: 2
+# # Example 2:
+
+# # Input: n = 3, trust = [[1,3],[2,3]]
+# # Output: 3
+# # Example 3:
+
+# # Input: n = 3, trust = [[1,3],[2,3],[3,1]]
+# # Output: -1
+
+
+# # Constraints:
+
+# # 1 <= n <= 1000
+# # 0 <= trust.length <= 104
+# # trust[i].length == 2
+# # All the pairs of trust are unique.
+# # ai != bi
+# # 1 <= ai, bi <= n
+
+# # if n <= len(trust):
+# #     return -1
+# # common = []
+# # commonElement = -1
+# # for i, element in enumerate(trust):
+# #     first = element[0]
+# #     second = element[1]
+# #     if i+1 == first:
+# #         if not common:
+# #             common = [first, second]
+# #         if first in common:
+# #             commonElement = first
+# #         if second in common:
+# #             commonElement = second
+
+# # return commonElement
+
+
+# def findJudge(n, trust):
+
+#     # Make a dict of who is trusts whom
+#     dict = {}
+#     for element in trust:
+#         trusts = element[0]
+#         trusted = element[1]
+#         if trusted in dict:
+#             dict.update({
+#                 trusted: dict[trusted] + [trusts]
+#             })
+#         else:
+#             dict.update({
+#                 trusted: [trusts]
+#             })
+#     print(dict)
+#     # Find who is Judge
+#     judge = -1
+#     if not dict and n == 1:
+#         return 1
+#     for key in dict:  # Everyone Trusts Judge
+#         numbers = [x for x in range(1, n+1)]
+#         numbers.remove(key)
+#         if all([x in dict[key] for x in numbers]):
+#             judge = key
+
+#     for key in dict:      # Everyone Trusts Judge
+#         if judge in dict[key]:
+#             judge = -1
+
+#     return judge
+
+# print(findJudge(1, []))
+
+
+# -----------------------------------------
+
+# find Permutations
+
+# def findPermutations(x):
+#     text = list(x)
+#     if len(text) <= 1:
+#         return text
+#     new = []
+#     for i in range(len(text)):
+#         temp = text[i]
+#         x = findPermutations(text[:i]+text[i+1:])
+#         for y in x:
+#             new.append(temp + y)
+#     return new
+
+
+# def printn(x):
+#     for i in x:
 #         print(i)
 
 
-# def seletionSort(array, ascending=True):
-#     for i in range(len(array)):
-#         min_index = i
-#         for j in range(i+1, len(array)):
-#             if (array[j] < array[min_index]):
-#                 min_index = j
+# printn(findPermutations("ABC"))
 
-#         array[i], array[min_index] = array[min_index], array[i]
-
-#     if not ascending:
-#         array = array[::-1]
-#     return array
-
-
-# # print(seletionSort([2, 3, 5, 4, 1]))
-
-
-# def insertionSort(array):
-#     n = len(array)
-#     if n <= 1:
-#         return array
-
-#     for i in range(1, n):
-#         j = i-1
-#         current = array[i]
-#         while j >= 0 and current < array[j]:
-#             array[j+1] = array[j]
-#             j -= 1
-#         array[j+1] = current
-#     return array
-
-
-# print(insertionSort([2, 3, 5, 4, 1]))
-
-
-# array = [2, 3, 5, 4, 1]
-
-# for i in range(1, len(array)):
-#     j = i-1
-#     current = array[i]
-#     while j >= 0 and current < array[j]:
-#         array[j+1] = array[j]
-#         j -= 1
-#     array[j+1] = current
-
-# print(array)
-
-# def sumList(arr):
-#     if len(arr) == 1:
-#         return arr[0]
-#     return (arr[0] + sumList(arr[1:]))
-
-
-# print(sumList([1, 2, 3, 4, 5]))
-
-# word = "121211121211121211"
-# flag = False
-# n = len(word)
-# for i in range(1, n // 2 + 1):
-#     pattern = word[:i]
-#     if all(word[j:j+i] == pattern for j in range(0, n, i)):
-#         flag = True
-
-# print(word, flag)
-
-
-# n a town, there are n people labeled from 1 to n. There is a rumor that one of these people is secretly the town judge.
-
-# If the town judge exists, then:
-
-# The town judge trusts nobody.
-# Everybody (except for the town judge) trusts the town judge.
-# There is exactly one person that satisfies properties 1 and 2.
-# You are given an array trust where trust[i] = [ai, bi] representing that the person labeled ai trusts the person labeled bi. If a trust relationship does not exist in trust array, then such a trust relationship does not exist.
-
-# Return the label of the town judge if the town judge exists and can be identified, or return -1 otherwise.
-
-
-# Example 1:
-
-# Input: n = 2, trust = [[1,2]]
-# Output: 2
-# Example 2:
-
-# Input: n = 3, trust = [[1,3],[2,3]]
-# Output: 3
-# Example 3:
-
-# Input: n = 3, trust = [[1,3],[2,3],[3,1]]
-# Output: -1
-
-
-# Constraints:
-
-# 1 <= n <= 1000
-# 0 <= trust.length <= 104
-# trust[i].length == 2
-# All the pairs of trust are unique.
-# ai != bi
-# 1 <= ai, bi <= n
-
-# if n <= len(trust):
-#     return -1
-# common = []
-# commonElement = -1
-# for i, element in enumerate(trust):
-#     first = element[0]
-#     second = element[1]
-#     if i+1 == first:
-#         if not common:
-#             common = [first, second]
-#         if first in common:
-#             commonElement = first
-#         if second in common:
-#             commonElement = second
-
-# return commonElement
-
-
-def findJudge(n, trust):
-
-    # Make a dict of who is trusts whom
-    dict = {}
-    for element in trust:
-        trusts = element[0]
-        trusted = element[1]
-        if trusted in dict:
-            dict.update({
-                trusted: dict[trusted] + [trusts]
-            })
-        else:
-            dict.update({
-                trusted: [trusts]
-            })
-    print(dict)
-    # Find who is Judge
-    judge = -1
-    if not dict and n == 1:
-        return 1
-    for key in dict:  # Everyone Trusts Judge
-        numbers = [x for x in range(1, n+1)]
-        numbers.remove(key)
-        if all([x in dict[key] for x in numbers]):
-            judge = key
-
-    for key in dict:      # Everyone Trusts Judge
-        if judge in dict[key]:
-            judge = -1
-
-    return judge
-
-
-print(findJudge(1, []))
+# -----------------------------------------
