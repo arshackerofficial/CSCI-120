@@ -517,3 +517,129 @@
 # printn(findPermutations("ABC"))
 
 # -----------------------------------------
+
+
+# def checksum(target, sum, memo={}):
+#     if target == 0:
+#         return True
+#     key = str(target) + "," + str(sum)
+#     if key in memo:
+#         return memo[key]
+
+#     for i, item in enumerate(sum):
+#         memo[key] = checksum(target-item, sum[:i]+sum[i+1:])
+#         return memo[key]
+
+#     return False
+
+
+# print(checksum(27, [3, 3, 3, 3, 3, 3, 3, 2, 3, 3]))
+
+
+# def nQueen(n):
+#     if n == 4:
+#         return [
+#             [0, 1, 0, 0],
+#             [0, 0, 0, 1],
+#             [1, 0, 0, 0],
+#             [0, 0, 1, 0]
+#         ]
+#     elif n < 4:
+#         return "Number Should be greater than 3"
+#     else:
+#         newBoard = addRowAndColumn(nQueen(n-1))
+
+#         pass
+
+# def addQueen(chess):
+#     firstRow = [0==x for x in chess[0]]
+
+#     for i in range(len(chess)):
+
+#     pass
+
+
+# def addRowAndColumn(chess):
+#     n = len(chess)
+#     newRow = [0 for x in range(n+1)]
+#     for i, item in enumerate(chess):
+#         chess[i] = [0] + item
+#     chess = [newRow] + chess
+#     return chess
+
+
+# print(addRowAndColumn([
+#     [1, 0, 0, 0, 0],
+#     [0, 0, 1, 0, 0],
+#     [0, 0, 0, 0, 1],
+#     [0, 1, 0, 0, 0],
+#     [0, 0, 0, 1, 0]
+# ]))
+
+# [
+#     [0, 0, 0, 0, 0, 0],
+#     [0, 1, 0, 0, 0, 0],
+#     [0, 0, 0, 1, 0, 0],
+#     [0, 0, 0, 0, 0, 1],
+#     [0, 0, 1, 0, 0, 0],
+#     [0, 0, 0, 0, 1, 0]
+# ]
+
+# def isStrictlyIncreasing(arr):
+#     if len(arr) < 2:
+#         return True
+
+#     return arr[0] < arr[1] and isStrictlyIncreasing(arr[1:])
+
+
+# a = [1, 1, 2, 3, 4, 6]
+
+# print(isStrictlyIncreasing(a))
+
+
+# def move_x(str, count=0, index=0):
+#     str = str.lower()
+
+#     if index >= len(str):
+#         return str + "x"*count
+
+#     if str[index] == "x":
+#         strs = list(str)
+#         strs.pop(index)
+#         return move_x("".join(strs), count+1, index)
+#     return move_x(str, count, index+1)
+
+
+# print(move_x("xxaxxxxxxxxxbxc"))
+
+
+# def removeDuplicate(string, used=[], index=0):
+
+#     if sorted(list(string)) == sorted(list(set(string))):
+#         return string
+
+#     if string[index] in used:
+#         strings = list(string)
+#         strings.pop(index)
+#         string = "".join(strings)
+#     else:
+#         used.append(string[index])
+#         index += 1
+
+#     return removeDuplicate(string, used, index)
+
+
+# print(removeDuplicate("aabccacc"))
+
+
+def printsub(string):
+    if len(string) == 0:
+        return
+
+    print(string)
+    # for i in range(len(string)):
+    #     printsub(string[i:])
+    # printsub(string[1:])
+
+
+printsub("abc")

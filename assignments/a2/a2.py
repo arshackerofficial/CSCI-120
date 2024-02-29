@@ -1,4 +1,3 @@
-# Arshpreet Singh Sidhu
 # 815805
 
 # Inventory Management System
