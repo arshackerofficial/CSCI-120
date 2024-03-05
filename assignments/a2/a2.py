@@ -23,6 +23,9 @@ def welcome():
 def add_item(inventory):
     name = input("Enter item name: ").lower()
 
+    if name.strip() == "":
+        return "Item Name Can not be empty!"
+
     try:
         quantity = int(input("Enter quantity: "))
 
@@ -41,6 +44,9 @@ def remove_item(inventory):
 
     name = input("Enter item name: ").lower()
 
+    if name.strip() == "":
+        return "Item Name Can not be empty!"
+
     if name not in inventory:
         return "Item not found in inventory."
 
@@ -51,7 +57,8 @@ def remove_item(inventory):
             return "Quantity can not be negative, Use 'Add an item' option to add items"
         if quantity == 0:
             return "Quantity not be zero"
-
+        if quantity > inventory[name]:
+            return "Not enough Quantity avaliable to remove"
         if inventory[name] == quantity:
             inventory.pop(name)
         else:

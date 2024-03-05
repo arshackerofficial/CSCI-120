@@ -631,15 +631,14 @@
 
 # print(removeDuplicate("aabccacc"))
 
+def printsub(string, current='', index=0):
 
-def printsub(string):
-    if len(string) == 0:
+    if index == len(string):
+        print(current)
         return
 
-    print(string)
-    # for i in range(len(string)):
-    #     printsub(string[i:])
-    # printsub(string[1:])
+    printsub(string, current + string[index], index + 1)
+    printsub(string, current, index + 1)
 
 
 printsub("abc")
