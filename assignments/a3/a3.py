@@ -119,15 +119,14 @@ class Game:
 
             if result == "pass":
                 i += 1
-                input("Press Enter to continue...")
+                input("Hooray!! You have passed the Level. Press Enter to continue...")
             elif result == "fail":
                 self.lives -= 1
-                print("\nYour Life is reduced by 1")
-                input("Press Enter to continue...")
+                input("Oops, Your Life is reduced by 1\nPress Enter to continue...")
             elif result == "retry":
                 input("Press Enter To Retry...")
 
-        print("Thank you for playing SortQuest!")
+        print("Game Over\nThank you for playing SortQuest!")
 
 
 if __name__ == "__main__":
