@@ -182,39 +182,39 @@ Week 14: Final Exam
 
 **Class Schedule:**
 
-| Week | Day       | Time              | Topic                                                                                                                                                                                                   |
-| ---- | --------- | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1    | Monday    | 4:00 pm - 5:55 pm | Introduction to the Course, Introduction to Algorithms and Python, Structural Diagram of the CPU and primary memory, Intro to Computing Science and algorithms, Intro to Python, Python data processing |
-| 1    | Thursday  | 4:00 pm - 5:55 pm | Same as above                                             |
-| 2    | Monday    | 4:00 pm - 5:55 pm | Binary number system, Selection constructs, Binary representation, Conditional statements in Python |
-| 2    | Thursday  | 4:00 pm - 5:55 pm | Same as above                                           |
-| 3    | Monday    | 4:00 pm - 5:55 pm | General Programming Techniques, Looping Constructs Part 1, Looping Constructs                   |
-| 3    | Wednesday | 4:00 pm - 5:00 pm | Lab 1                                                     |
-| 3    | Thursday  | 4:00 pm - 5:55 pm | Same as above                                             |
-| 4    | Monday    | 4:00 pm - 5:55 pm | Looping construct Part 2, Functions Part 1, Assignment 1                     |
-| 4    | Thursday  | 4:00 pm - 5:55 pm | Same as above                                            |
-| 5    | Monday  | 4:00 pm - 5:55 pm | Functions Part 2, Stepwise refinement, Python Graphical interface, Python Turtle |
-| 5    | Wednesday  | 4:00 pm - 5:00 pm | Lab 2                                                                         |
-| 5    | Thursday  | 4:00 pm - 5:55 pm | Same as above                                                                  |
-| 6    | To be decided  | To be decided | Midterm                                           |
-| 7    | Monday  | 4:00 pm - 5:55 pm | Data Structures, Lists, Strings, Assignments 2 |
-| 7    | Thursday  | 4:00 pm - 5:55 pm | Same as above                                                                  |
-| 8    | Monday  | 4:00 pm - 5:55 pm | Data Structures, Tuples, Dictionaries |
-| 8    | Wednesday  | 4:00 pm - 5:00 pm | Lab 3                                                                         |
-| 8    | Thursday  | 4:00 pm - 5:55 pm | Same as above                                                                  |
-| 9    | Monday  | 4:00 pm - 5:55 pm | Data Structures, Sets, queues, and stacks |
-| 9    | Thursday  | 4:00 pm - 5:55 pm | Same as above                                                                  |
-| 10    | Monday  | 4:00 pm - 5:55 pm | File Input and Output, Exception, Handling, Assignment 3 |
-| 10    | Thursday  | 4:00 pm - 5:55 pm | Same as above                                                                  |
-| 11    | To be decided  | To be decided | Midterm                                           |
-| 12    | Monday  | 4:00 pm - 5:55 pm | Recursion, Sorting and Searching algorithms, Big O notation |
-| 12    | Wednesday  | 4:00 pm - 5:00 pm | Lab 4                                                                         |
-| 12    | Thursday  | 4:00 pm - 5:55 pm | Same as above                                                                  |
-| 13    | Monday  | 4:00 pm - 5:55 pm | Python Object Oriented Programming 1, Python Classes, Instance variables and methods, Instantiating objects |
-| 13    | Thursday  | 4:00 pm - 5:55 pm | Same as above                                                                  |
-| 11    | To be decided  | To be decided | Final Term                                           |
+| Week | Day           | Time              | Topic                                                                                                                                                                                                   |
+| ---- | ------------- | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1    | Monday        | 4:00 pm - 5:55 pm | Introduction to the Course, Introduction to Algorithms and Python, Structural Diagram of the CPU and primary memory, Intro to Computing Science and algorithms, Intro to Python, Python data processing |
+| 1    | Thursday      | 4:00 pm - 5:55 pm | Same as above                                                                                                                                                                                           |
+| 2    | Monday        | 4:00 pm - 5:55 pm | Binary number system, Selection constructs, Binary representation, Conditional statements in Python                                                                                                     |
+| 2    | Thursday      | 4:00 pm - 5:55 pm | Same as above                                                                                                                                                                                           |
+| 3    | Monday        | 4:00 pm - 5:55 pm | General Programming Techniques, Looping Constructs Part 1, Looping Constructs                                                                                                                           |
+| 3    | Wednesday     | 4:00 pm - 5:00 pm | Lab 1                                                                                                                                                                                                   |
+| 3    | Thursday      | 4:00 pm - 5:55 pm | Same as above                                                                                                                                                                                           |
+| 4    | Monday        | 4:00 pm - 5:55 pm | Looping construct Part 2, Functions Part 1, Assignment 1                                                                                                                                                |
+| 4    | Thursday      | 4:00 pm - 5:55 pm | Same as above                                                                                                                                                                                           |
+| 5    | Monday        | 4:00 pm - 5:55 pm | Functions Part 2, Stepwise refinement, Python Graphical interface, Python Turtle                                                                                                                        |
+| 5    | Wednesday     | 4:00 pm - 5:00 pm | Lab 2                                                                                                                                                                                                   |
+| 5    | Thursday      | 4:00 pm - 5:55 pm | Same as above                                                                                                                                                                                           |
+| 6    | To be decided | To be decided     | Midterm                                                                                                                                                                                                 |
+| 7    | Monday        | 4:00 pm - 5:55 pm | Data Structures, Lists, Strings, Assignments 2                                                                                                                                                          |
+| 7    | Thursday      | 4:00 pm - 5:55 pm | Same as above                                                                                                                                                                                           |
+| 8    | Monday        | 4:00 pm - 5:55 pm | Data Structures, Tuples, Dictionaries                                                                                                                                                                   |
+| 8    | Wednesday     | 4:00 pm - 5:00 pm | Lab 3                                                                                                                                                                                                   |
+| 8    | Thursday      | 4:00 pm - 5:55 pm | Same as above                                                                                                                                                                                           |
+| 9    | Monday        | 4:00 pm - 5:55 pm | Data Structures, Sets, queues, and stacks                                                                                                                                                               |
+| 9    | Thursday      | 4:00 pm - 5:55 pm | Same as above                                                                                                                                                                                           |
+| 10   | Monday        | 4:00 pm - 5:55 pm | File Input and Output, Exception, Handling, Assignment 3                                                                                                                                                |
+| 10   | Thursday      | 4:00 pm - 5:55 pm | Same as above                                                                                                                                                                                           |
+| 11   | To be decided | To be decided     | Midterm                                                                                                                                                                                                 |
+| 12   | Monday        | 4:00 pm - 5:55 pm | Recursion, Sorting and Searching algorithms, Big O notation                                                                                                                                             |
+| 12   | Wednesday     | 4:00 pm - 5:00 pm | Lab 4                                                                                                                                                                                                   |
+| 12   | Thursday      | 4:00 pm - 5:55 pm | Same as above                                                                                                                                                                                           |
+| 13   | Monday        | 4:00 pm - 5:55 pm | Python Object Oriented Programming 1, Python Classes, Instance variables and methods, Instantiating objects                                                                                             |
+| 13   | Thursday      | 4:00 pm - 5:55 pm | Same as above                                                                                                                                                                                           |
+| 11   | To be decided | To be decided     | Final Term                                                                                                                                                                                              |
 
-*Note: This is a detailed class schedule, but it is still subject to change. Refer to the instructor's announcements for the most accurate and up-to-date schedule.
+\*Note: This is a detailed class schedule, but it is still subject to change. Refer to the instructor's announcements for the most accurate and up-to-date schedule.
 
 **Evaluation Criteria:**
 
@@ -228,8 +228,11 @@ Week 14: Final Exam
 The repository is organized into the following directories:
 
 - **`labs/`**: Contains code for various lab exercises.
+- **`books/`**: Contains books for this course.
+- **`classwork/`**: Contains programs that we made in class.
+- **`exams/`**: Contains code for various exams.
+- **`slides/`**: Contains lecture slides.
 - **`assignments/`**: Holds code related to assignments given throughout the course.
-- **`misc/`**: Additional miscellaneous code snippets or related files.
 
 Feel free to navigate through the folders to find specific code snippets or assignments.
 

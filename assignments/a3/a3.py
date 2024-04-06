@@ -72,7 +72,7 @@ class Level:
                 print(
                     f"\nExcellent Work, You completed challenge just in {duration:.2f} seconds.")
                 score = 100
-            if duration > 30:
+            elif duration > 30:
                 print(f"\nYou took way too much time. {duration:.2f} seconds.")
                 return "fail", 0
             else:
